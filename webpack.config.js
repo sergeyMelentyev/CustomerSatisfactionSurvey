@@ -17,7 +17,18 @@ const config = {
   },
   devtool: "source-map",
   devServer: {
-    historyApiFallback: true
+    historyApiFallback: true,
+    proxy: {
+      "/api": {
+        target: "http://localhost:5000",
+        bypass: function(req, res, proxyOptions) {
+          if (req.headers.accept.indexOf("html") !== -1) {
+            console.log("Skipping proxy for browser request.");
+            return "/index.html";
+          }
+        }
+      }
+    }
   },
   mode: "development",
   plugins: [
