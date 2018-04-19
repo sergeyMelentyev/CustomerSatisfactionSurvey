@@ -1,4 +1,5 @@
-const http = require("http");
+const express = require("express");
+const app = express();
 
 const data = {
     "glossary": {
@@ -23,10 +24,9 @@ const data = {
     }
 };
 
-function handleIncomingRequest(req, res) {
-	const output = {error: null, data : data};
-	res.writeHeader(200, {"Content-Type" : "application/json"});
-	res.end(JSON.stringify(output));
-}
-const server = http.createServer(handleIncomingRequest);
-server.listen(5000);
+// route handler
+app.get("/api", (req, res) => {
+    res.send(data);
+});
+
+app.listen(5000);

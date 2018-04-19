@@ -20,13 +20,7 @@ const config = {
     historyApiFallback: true,
     proxy: {
       "/api": {
-        target: "http://localhost:5000",
-        bypass: function(req, res, proxyOptions) {
-          if (req.headers.accept.indexOf("html") !== -1) {
-            console.log("Skipping proxy for browser request.");
-            return "/index.html";
-          }
-        }
+        target: "http://localhost:5000"
       }
     }
   },
