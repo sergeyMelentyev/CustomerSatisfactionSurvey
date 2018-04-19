@@ -13,7 +13,7 @@ export default class App extends React.Component {
 	
 	render() {
 		return (
-			<div>MERN</div>
+			<div>MERN!</div>
 		);
 	}
 };

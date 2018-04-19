@@ -29,4 +29,6 @@ app.get("/api", (req, res) => {
     res.send(data);
 });
 
-app.listen(5000);
+// dynamic port lookup for production environment
+const PORT = process.env.PORT || 5000;
+app.listen(PORT);
