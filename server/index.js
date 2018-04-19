@@ -27,7 +27,7 @@ const data = {
 };
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + "../dist"));
 
 // dynamic port lookup for production environment
 const PORT = process.env.PORT || 5000;
