@@ -8,8 +8,7 @@
     "npm": "5.6.0"
   },
   "scripts": {
-    "postinstall": "npm install express",
-    "start": "node ./server/index.js",
+    "start": "set NODE_ENV=production && webpack -p && node ./server/index.js",
     "dev-server": "nodemon ./server/index.js",
     "dev-client": "webpack-dev-server --open",
     "build-client": "set NODE_ENV=production && webpack -p"
