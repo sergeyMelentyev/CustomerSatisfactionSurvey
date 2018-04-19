@@ -6,7 +6,7 @@ export default class App extends React.Component {
 	}
 
 	componentDidMount() {
-		fetch("http://localhost:8080/api")
+		fetch("https://sheltered-chamber-49942.herokuapp.com/api")
 			.then(response => response.json())
         	.then(data => console.log(data))
 	}

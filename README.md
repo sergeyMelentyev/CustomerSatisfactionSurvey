@@ -15,3 +15,14 @@ npm install --save-dev babel-core babel-loader babel-preset-env babel-preset-rea
 npm run dev-server
 
 npm run dev-client
+
+
+***
+
+**ИСПОЛЬЗУЕМЫЙ СТЕК**
+
+Heroku CLI (deployment)
+
+Node, Express (server)
+
+JS ES6, React, Redux, Router (client)
