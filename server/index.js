@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 const data = {
-    "glossary": {
+    "glossaryyyyyyyy": {
         "title": "example glossary",
         "GlossDiv": {
             "title": "S",
