@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 
 const config = {
-  entry: "./app/index.js",
+  entry: "./app/passport.js",
   output: {
   	path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
