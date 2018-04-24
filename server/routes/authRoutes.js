@@ -1,4 +1,4 @@
-const passport = require("passport");
+const passport = require("../oauth/passport");
 
 module.exports = (app) => {
     // use oauth module if user ask for specific url
