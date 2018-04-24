@@ -17,20 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+            <state relative-caret-position="76">
+              <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authRoutes.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="authRoutes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/routes/authRoutes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state>
+              <caret column="37" lean-forward="true" selection-start-column="37" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -67,8 +67,8 @@
         <option value="$PROJECT_DIR$/server/oauth/index.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/server/oauth/passport.js" />
-        <option value="$PROJECT_DIR$/server/index.js" />
         <option value="$PROJECT_DIR$/server/routes/authRoutes.js" />
+        <option value="$PROJECT_DIR$/server/index.js" />
       </list>
     </option>
   </component>
@@ -171,12 +171,12 @@
       <option name="presentableId" value="Default" />
       <updated>1524129481984</updated>
       <workItem from="1524129488146" duration="1990000" />
-      <workItem from="1524131728169" duration="20119000" />
+      <workItem from="1524131728169" duration="20870000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22109000" />
+    <option name="totallyTimeSpent" value="22860000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1028" extended-state="6" />
@@ -310,17 +310,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/index.js">
+    <entry file="file://$PROJECT_DIR$/server/routes/authRoutes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+        <state>
+          <caret column="37" lean-forward="true" selection-start-column="37" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/authRoutes.js">
+    <entry file="file://$PROJECT_DIR$/server/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="76">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
     </entry>
