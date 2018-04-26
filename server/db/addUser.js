@@ -2,7 +2,7 @@ const MongoClient = require("mongodb").MongoClient;
 const assert = require("assert");
 const keys = require("../config/keys");
 
-const insertDocuments = (db, data, callback) => {
+const addUser = (db, data, callback) => {
     const collection = db.collection("users");
     collection.insertOne(data)
         .then((result, err) => {
@@ -17,8 +17,8 @@ module.exports = data => {
     MongoClient.connect(keys.mongoURI, (err, client) => {
         if (err) throw err;
         const db = client.db("customer-satisfaction-survey");
-        insertDocuments(db, data, result => {
-            console.log(result);
+        addUser(db, data, result => {
+            // console.log(result);
             client.close();
         });
     });
