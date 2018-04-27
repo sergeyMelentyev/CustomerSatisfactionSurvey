@@ -1,16 +1,16 @@
 const MongoClient = require("mongodb").MongoClient;
 const keys = require("../config/keys");
 
-const addUser = (db, data) => {
+const findUser = (db, userID) => {
     const collection = db.collection("users");
-    return collection.insertOne(data);
+    return collection.findOne({_id: userID});
 };
 
-module.exports = data => {
+module.exports = userID => {
     return MongoClient.connect(keys.mongoURI)
         .then(client => {
             const db = client.db("customer-satisfaction-survey");
-            return addUser(db, data);
+            return findUser(db, userID);
         })
         .catch(err => console.log(err));
 };

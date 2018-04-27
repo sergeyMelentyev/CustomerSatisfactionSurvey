@@ -20,8 +20,7 @@ npm install --save react react-dom react-router-dom
 
 npm install --save-dev babel-core babel-loader babel-preset-env babel-preset-react css-loader style-loader
 npm install --save-dev webpack webpack-dev-server html-webpack-plugin webpack-cli
-npm install --save-dev nodemon passport passport-google-oauth20
-npm install --save-dev mongoose
+npm install --save-dev nodemon passport passport-google-oauth20 cookie-session
 
 
 
