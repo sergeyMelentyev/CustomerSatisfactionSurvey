@@ -18,7 +18,7 @@ Utils: NPM (5.x), Webpack (4.x), Babel-core (6.x)
 
 npm init
 
-npm install --save react react-dom react-router-dom
+npm install --save react react-dom react-router-dom redux react-redux
 
 npm install --save-dev babel-core babel-loader babel-preset-env babel-preset-react css-loader style-loader
 npm install --save-dev webpack webpack-cli webpack-dev-server html-webpack-plugin 
