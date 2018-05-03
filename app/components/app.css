@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+.app__main-container {
+    display: flex;
+    flex-direction: column;
+}
