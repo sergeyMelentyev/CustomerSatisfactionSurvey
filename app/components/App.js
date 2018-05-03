@@ -1,14 +1,20 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { connect } from "react-redux";
+import * as actions from "../state/actions";
+
 import Header from "./header/Header";
 import Landing from "./landing/Landing";
 import Dashboard from "./dashboard/Dashboard";
 import SurveyNew from "./surveyNew/SurveyNew";
 import "./app.css";
 
-export default class App extends React.Component {
+class App extends React.Component {
 	constructor(props) {
 		super(props);
+	}
+	componentDidMount() {
+		this.props.fetchUser();
 	}
 	render() {
 		return (
@@ -24,4 +30,6 @@ export default class App extends React.Component {
 			</BrowserRouter>
 		);
 	}
-};
+}
+
+export default connect(null, actions)(App);
