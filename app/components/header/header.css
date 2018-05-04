@@ -1,5 +1,21 @@
 .header__wrapper {
     display: flex;
-    height: 100px;
+    flex-direction: column;
     background-color: aliceblue;
+}
+.testSubmitComp {
+    display: inline-flex;
+    justify-content: center;
+}
+.testUnpackedItems {
+    display: flex;
+    flex-direction: column;
+}
+.testPackedItems {
+    display: flex;
+    flex-direction: column;
+}
+.testItem {
+    display: inline-flex;
+    margin: 15px 0;
 }
