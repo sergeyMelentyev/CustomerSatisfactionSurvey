@@ -59,10 +59,10 @@ export default class Header extends React.Component {
 
         return (
             <div className="header__wrapper">
-                {/*<TestSubmitComp onSubmit={this.handleSubmit} />*/}
-                {/*<TestItems title="Unpacked Items" items={unpackedItems} onRemove={this.handleRemoveItem} onToggle={this.handleToggleItem} />*/}
-                {/*<TestItems title="Packed Items" items={packedItems} onRemove={this.handleRemoveItem} onToggle={this.handleToggleItem} />*/}
-                {/*<button onClick={this.markAllAsUnpacked}>Mark All As Unpacked</button>*/}
+                <TestSubmitComp onSubmit={this.handleSubmit} />
+                <TestItems title="Unpacked Items" items={unpackedItems} onRemove={this.handleRemoveItem} onToggle={this.handleToggleItem} />
+                <TestItems title="Packed Items" items={packedItems} onRemove={this.handleRemoveItem} onToggle={this.handleToggleItem} />
+                <button onClick={this.markAllAsUnpacked}>Mark All As Unpacked</button>
             </div>
         );
     }

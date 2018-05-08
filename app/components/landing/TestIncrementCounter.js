@@ -1,31 +1,42 @@
 import React from "react";
-import TestIncrementUI from "./TestIncrementUI";
+import CounterStore from "./CounterStore";
+import * as actions from "./TestAppActions";
 
 export default class TestIncrementCounter extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            count: 0
-        };
+        this.state = CounterStore.getState();
         this.handleIncrement = this.handleIncrement.bind(this);
         this.handleDecrement = this.handleDecrement.bind(this);
         this.handleReset = this.handleReset.bind(this);
+        this.updateState = this.updateState.bind(this);
+    }
+    updateState() {
+        this.setState(CounterStore.getState());
+    }
+    componentDidMount() {
+        CounterStore.on("change", this.updateState);
+    }
+    componentWillUnmount() {
+        CounterStore.off("change", this.updateState);
     }
     handleIncrement() {
-        this.setState({ count: this.state.count +1 });
+        actions.updateCounterOnIncrement(1);
     }
     handleDecrement() {
-        this.setState({ count: this.state.count -1 });
+        actions.updateCounterOnDecrement(1);
     }
     handleReset() {
-        this.setState({ count: 0 });
+        actions.updateCounterOnRest();
     }
     render() {
         return (
-            <TestIncrementUI count={this.state.count}
-                             onIncrement={this.handleIncrement}
-                             onDecrement={this.handleDecrement}
-                             onReset={this.handleReset} />
+            <div className="testIncrementUI">
+                <p>Counter: {this.state.count}</p>
+                <button onClick={this.handleIncrement}>Increment</button>
+                <button onClick={this.handleDecrement}>Decrement</button>
+                <button onClick={this.handleReset}>Reset</button>
+            </div>
         );
     }
 };
