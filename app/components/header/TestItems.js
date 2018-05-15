@@ -14,7 +14,7 @@ export default class TestItems extends React.Component {
         this.setState({ searchTerm });
     }
     render() {
-        const {title, items, onRemove, onToggle} = this.props;
+        const {title, items} = this.props;
         return (
             <div>
                 <h1>{title} {items.length}</h1>
@@ -24,9 +24,7 @@ export default class TestItems extends React.Component {
                         items
                             .filter(item => item.value.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
                             .map((item, index) =>
-                            <TestItem key={index} item={item}
-                                      onRemove={() => onRemove(item)}
-                                      onToggle={() => onToggle(item)} />
+                            <TestItem key={index} item={item} />
                         )
                     }
                 </ul>

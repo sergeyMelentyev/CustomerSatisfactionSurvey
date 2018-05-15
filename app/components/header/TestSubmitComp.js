@@ -1,4 +1,5 @@
 import React from "react";
+import { addItem } from "./TestAppActions";
 
 export default class TestSubmitComp extends React.Component {
     constructor(props) {
@@ -13,7 +14,7 @@ export default class TestSubmitComp extends React.Component {
         this.setState({value: event.target.value});
     }
     handleSubmit() {
-        this.props.onSubmit(this.state.value);
+        addItem(this.state.value);
         this.setState({value: ""});
     }
     render() {

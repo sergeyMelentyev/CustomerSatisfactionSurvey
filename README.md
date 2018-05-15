@@ -25,7 +25,6 @@ npm install --save-dev webpack webpack-cli webpack-dev-server html-webpack-plugi
 npm install --save-dev nodemon mongodb passport passport-google-oauth20 cookie-session
 
 
-
 ***
 
 
@@ -36,3 +35,14 @@ npm run install
 npm run webpack-dev-server
 
 npm run webpack-dev-client
+
+
+***
+
+
+**ОПИСАНИЕ**
+
+SPA приложение на React для компаний, желающих удобным способом организовать массовую рассылку писем своим клиентам с целью получения фитбека об их продуктах и услугах.
+Авторизация компаний через Google-oAuth2.0, личный кабинет, список проведенных ранее опросов с результатами опросов.
+Новые опросы возможно организовать после пополнения кошелька реальными деньгами.
+На стороне сервера Node + Express, хранение данных о компаниях и проведенных опросах в MongoDB.
